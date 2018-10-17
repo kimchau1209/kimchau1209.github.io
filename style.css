@@ -11,5 +11,64 @@ ul li{list-style-type: none;}
 a:hover{
 	text-decoration: none;
 }
-a{color: none;}
 /*end reset*/
+body,html{
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+#menu{
+	text-transform: uppercase;
+}
+.navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
+#logo{
+	color: #e4555b;
+	font-weight: 800;
+	font-size: 30px;
+}
+#logo span{color: #000;}
+#menu .nav-item.nav-link.active {color: #e4555b;}
+#menu .nav-item.nav-link:hover {color: #e4555b;}
+/*end menu*/
+#intro{
+	width: 100%;
+	height: 100%;
+	background: #e9585f;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+#intro:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 50%;
+	background: #e4555b;
+}
+#intro .info{
+	position: relative;
+	top: 150px;
+
+}
+#intro img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+#intro h1{
+	color: #ffff;
+	font-style: italic;
+}
+#intro span{display: block;}
+#intro .btn{
+	width: 170px;
+	height: 40px;
+	background: #111111;
+	color: #fbfbfb;
+	border: none;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
