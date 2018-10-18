@@ -60,7 +60,8 @@ body,html{
 }
 #intro h1{
 	color: #ffff;
-	font-style: italic;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 600;
 }
 #intro span{display: block;}
 #intro .btn{
@@ -72,3 +73,68 @@ body,html{
 	text-transform: uppercase;
 	padding-top: 10px;
 }
+/*end intro*/
+#about-me{
+	background: url(images/bg-1.png);
+	background-position: center center;
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#about-me:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.6;
+	z-index: 1;
+}
+#about-me .info{
+	position: absolute;
+	z-index: 3;
+
+}
+/*end about-me*/
+.box-1 {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e4555b;
+    margin-bottom: 20px;
+}
+#skill img {
+    width: 100%;
+    height: 100px;
+}
+
+/*responsive*/
+@media all and (max-width: 768px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 7px 24px;
+    border-bottom: 1px dashed;
+    text-align: center;
+    text-transform: uppercase;
+	}
+}
+
+@media all and (max-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 7px 24px;
+    border-bottom: 1px dashed;
+    text-align: center;
+    text-transform: uppercase;
+	}
+}
+
+
+/*end responsive*/
