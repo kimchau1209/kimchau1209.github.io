@@ -31,6 +31,9 @@ body,html{
 #menu .nav-item.nav-link.active {color: #e4555b;}
 #menu .nav-item.nav-link:hover {color: #e4555b;}
 /*end menu*/
+h1 span{
+	color: #e4555b;
+}
 #intro{
 	width: 100%;
 	height: 100%;
@@ -53,7 +56,18 @@ body,html{
 	top: 150px;
 
 }
-#intro img{
+#intro .scroll{
+	position: relative;
+	top: 200px;
+	z-index: 3;
+	cursor: pointer;
+	transition: 0.4;
+}
+#intro .scroll:hover{
+	transition: 0.4s;
+	top: 180px;
+}
+#intro .info img{
 	width: 180px;
 	height: 180px;
 	border-radius: 50%;
@@ -103,19 +117,73 @@ body,html{
 
 }
 /*end about-me*/
-.box-1 {
-    width: 90%;
-    height: 40px;
+
+#skill{
+	height: 100%;
+	padding-top: 100px;
+}
+#skill .details h1{
+	font-size: 20px;
+    margin-bottom: 40px;
+}
+#skill li{
+	margin-bottom: 20px;
+}
+#skill .details{
+	display: flex;
+	align-items: center;
+}
+#skill img{
+	width: 100%;
+	height: auto;
+}
+#skill .block-1 i{
+	margin-left: 10px;
+	color: #e4555b;
+}
+#skill .block-2 i{
+	margin-right: 10px;
+	color: #e4555b;
+}
+/*end skill*/
+
+/*contact*/
+#contact{
+	background: #252525;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+#contact h1 {
+    margin-bottom: 50px;
+}
+#contact h2{margin-bottom: 50px;}
+#contact .details{
+	padding: 0px 0px 0px 50px;
+}
+#contact .info{
+	display: flex;
+	margin-bottom: 20px;
+}
+.icons {
+    width: 30px;
+    height: 30px;
+    background: #e4555b;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #e4555b;
-    margin-bottom: 20px;
+    margin-right: 10px;
 }
-#skill img {
-    width: 100%;
-    height: 100px;
+
+.txt {
+    display: flex;
+    align-items: center;
 }
+/*end contact*/
 
 /*responsive*/
 @media all and (max-width: 768px) {
