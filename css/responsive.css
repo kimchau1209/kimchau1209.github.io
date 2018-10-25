@@ -1,0 +1,34 @@
+@media all and (max-width: 576px) {
+    body,html{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    a.nav-item.nav-link.contact {border-bottom: none;}
+    #skill .man{display: none;}
+}
+
+@media all and (max-width: 992px) {
+    body,html{
+        font-size: 14px;
+    }
+    a.nav-item.nav-link.contact {border-bottom: none;}
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 7px 24px;
+    border-bottom: 1px dashed;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    #skill,#work,#contact{height: auto;}
+    #skill{padding-top: 50px;}
+    #skill .details h1{font-size: 18px;}
+    #skill .onlyPC{display: none;}
+    #skill .onlySP{display: block;}
+    
+    #work .text-center {
+    margin: 20px;
+}
+    
+
+}

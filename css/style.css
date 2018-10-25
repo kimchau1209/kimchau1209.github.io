@@ -1,0 +1,336 @@
+/*reset css*/
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+a{text-decoration: none;}
+ul li{list-style-type: none;}
+a:hover{
+	text-decoration: none;
+}
+
+/*end reset*/
+body,html{
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	color: #000;
+}
+.effect-flydown{animation: flydown 2s forwards; transition: 0.4s;transition-delay: 4s}
+.navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
+.navbar-light .navbar-nav .nav-link{color: #000;}
+#logo{
+	color: #e4555b;
+	font-weight: 800;
+	font-size: 30px;
+}
+#logo span{color: #000;}
+#menu .nav-item.nav-link.active {color: #e4555b;}
+#menu .nav-item.nav-link:hover {color: #e4555b;}
+/*end menu*/
+h1 span{
+	color: #e4555b;
+}
+#intro{
+	width: 100%;
+	height: 100%;
+	background: #e9585f;
+	animation: flyleft 3s forwards; transition: 0.4s;
+	opacity: 0;
+	transition-delay: 6s;
+}
+#intro:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 50%;
+	background: #e4555b;
+}
+#intro .info{
+	position: relative;
+	top: 150px;
+	animation: flyleft 2s forwards; transition: 0.4s;
+	opacity: 0;
+}
+#intro .scroll{
+	position: relative;
+	top: 200px;
+	z-index: 3;
+	cursor: pointer;
+	transition: 0.4;
+}
+#intro .scroll:hover{
+	transition: 0.4s;
+	top: 180px;
+}
+#intro .info img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+#intro h1{
+	color: #ffff;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 600;
+}
+#intro span{display: block;}
+#intro .btn{
+	width: 170px;
+	height: 40px;
+	background: #111111;
+	color: #fbfbfb;
+	border: none;
+	text-transform: uppercase;
+	padding-top: 10px;
+	margin-top: 30px;
+}
+.btn:hover{
+	opacity: 0.6;
+	transition: 0.4s;
+}
+/*end intro*/
+#about-me{
+	background: url(../images/bg.png);
+	background-position: center center;
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#about-me:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.5;
+	z-index: 1;
+
+}
+#about-me .info{
+	position: absolute;
+	z-index: 3;
+
+}
+/*end about-me*/
+
+#skill{
+	height: 100%;
+	padding-top: 100px;
+}
+#skill .onlySP{display: none;}
+#skill .details h1{
+	font-size: 20px;
+    margin-bottom: 40px;
+}
+#skill li{
+	margin-bottom: 20px;
+}
+
+#skill img{
+	width: 100%;
+	height: auto;
+}
+#skill .block-1 i{
+	margin-left: 10px;
+	color: #e4555b;
+}
+#skill .block-2 i{
+	margin-right: 10px;
+	color: #e4555b;
+}
+/*end skill*/
+#work{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	/*background: #484b54;*/
+
+}
+#work img{
+	width: 100%;
+	height: auto;
+}
+#work .text-center {margin-bottom: 100px;}
+figure {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	height: 250px;
+}
+
+figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+figure figcaption {
+	color: #fff;
+	/*text-transform: uppercase;*/
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.effect {
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+
+figure.effect img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect figcaption {
+	background-color: #000;
+	opacity: 0.6;
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+figure.effect figcaption::before {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+figure.effect h4 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect figcaption::before,
+figure.effect p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect:hover h4 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect:hover figcaption::before,
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect:hover img {
+	opacity: 0.4;
+}
+/*contact*/
+#contact{
+	background: #252525;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+#contact h1 {
+    margin-bottom: 50px;
+}
+#contact h2{margin-bottom: 50px;}
+#contact .details{
+	padding: 0px 0px 0px 50px;
+}
+#contact .info{
+	display: flex;
+	margin-bottom: 20px;
+}
+.icons {
+    width: 30px;
+    height: 30px;
+    background: #e4555b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.txt {
+    display: flex;
+    align-items: center;
+}
+/*end contact*/
+
+#onTop{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #fff;
+	background: #e4555b;
+	right: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	z-index: 10000;
+	cursor: pointer;
+	transition: 0.4s
+}
+#onTop:hover{bottom: 10%;transition: 0.4s;}
+i.fas.fa-arrow-up {
+    font-size: 24px;
+}
+
+/*load effect*/
+@keyframes flyleft{
+	from{opacity: 0; transform: translateX(-200px);}
+	to {opacity: 1; transform: translateX(0px);}
+}
+@keyframes flydown{
+	from{opacity: 0; transform: translateY(-200px);}
+	to {opacity: 1; transform: translateX(0px);}
+}
